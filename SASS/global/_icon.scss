@@ -1,0 +1,45 @@
+.material-icons{
+    font-size: 40px;
+    cursor: pointer;
+}
+.fa{
+    font-size: 30px;
+    margin: 5px
+    
+}
+.i{
+    font-size: 16px;
+}
+.icon{
+    @include display;
+    
+    color: $colortext;
+    font-size: $fontsize-title;
+}
+.box .fa{
+   
+    font-size: small;
+
+}
+.link{
+    @include display;
+    color: white;
+    margin-left: 50px;
+    .fa-angle-double-right{
+        color: white;
+        margin: 10px;
+        
+    }
+}
+
+@media( max-width:900px){
+    .material-icons{
+        font-size: 30px;
+    }
+    .fa{
+        font-size: 25px;
+    }
+    .i{
+        font-size: 15px;
+    }
+}

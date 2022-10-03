@@ -1,0 +1,36 @@
+.main-center button{
+    padding: 30px;
+    width: 30%;
+    font-size: 30px;
+}
+button a{
+    color: $colortext;
+}
+.submit button{
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    width: 60vh;
+    border-radius: 10px;
+    background-color: blue;
+    font-size: xx-large;
+}
+@media (max-width:900px){
+    .main-center button{
+        width: 40%;
+    }
+    .card button{
+        width: 15%;
+    }
+}
+@media (max-width:500px){
+   
+    .main-center button{
+        width: 60%;
+        font-size: 20px;
+        padding: 20px;
+    }
+    .card button{
+        width: 100%;
+    }
+}

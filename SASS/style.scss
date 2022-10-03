@@ -1,0 +1,27 @@
+@import'_Variable.scss';
+@import'global/button';
+@import'conpinent/container';
+@import'conpinent/nav';
+@import'conpinent/footer';
+@import'global/form';
+@import'global/icon';
+@import'conpinent/mainer';
+@import'global/text';
+@import'global/card';
+@import'global/image';
+@import'global/video';
+@import'conpinent/ifram';
+
+
+
+button{
+    @include btn;
+}
+body{
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    font-family: $fontfamily;
+}

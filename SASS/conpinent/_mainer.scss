@@ -1,0 +1,52 @@
+@import'../maxin';
+mainer{
+  .title{
+    font-size: 30px;
+    color: $colortext;
+    font-weight: bold;
+  }
+  @include display;
+  height: 100vh;
+  justify-content: space-around;
+  flex-direction: column
+
+    
+  
+}
+contain{
+      @include display;
+      height: 50vh;
+      width: 100%;
+      justify-content: center;
+      background-image: url(../../image/Motivate-More-People-to-Take-Your-Online-Courses.jpg);
+        @include background-img;
+      .main-center{
+        @include display;
+        justify-content: space-between;
+         background-color: rgba(0, 0, 0, 0.384);
+        width: 100%;
+        height: 60vh;
+       
+      }
+}
+@media (max-width:900px){
+  mainer{
+    height: 70vh;
+    contain{
+      height: 30vh;
+    }
+    .main-center{
+      height: 40vh;
+    }
+  }
+ 
+}
+@media (max-width:500px){
+  contain{
+    height: 20vh;
+    .main-center{
+      height: 20vh;
+  }
+}
+
+}

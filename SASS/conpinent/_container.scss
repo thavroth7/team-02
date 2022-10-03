@@ -1,0 +1,212 @@
+@import'../maxin';
+container{
+    display: flex;
+    flex-direction: column;
+
+    main{
+        display: flex;
+        flex-direction: column;
+        background-image: url(../../image/cover\ home.jpg);
+        @include background-img;
+        height: 100vh;
+        .bg{
+            background-color: rgba(0, 0, 0, 0.486);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .caiption{
+            display: flex;
+            flex-direction: column;
+            margin: 50px;
+        }
+    }
+
+     
+}
+.head{
+    height: 80vh;
+    background-image: url(../../image/Company-178447404.jpg);
+    @include background-img;
+    
+
+}
+.center{
+    @include display;
+    background-color: rgb(209, 209, 209);
+    padding: 30px;
+    flex-direction: column;
+    height: 300vh;
+    .logo{
+        @include display;
+    }
+}
+.header{
+    height: 80vh;
+    background-image: url(../../image/position.jpg);
+    @include background-img;
+}
+.main-head{
+    height: 80vh;
+    background-image: url(../../image/cv.jpg);
+    @include background-img;
+
+}
+.contain{
+    @include display;
+    flex-direction: column;
+    height: 530vh;
+    justify-content: center;
+    background-color: rgb(209, 209, 209);
+    padding: 50px;
+
+    
+    .sub-title{
+        margin: 20px;
+        
+    }
+    .text{
+        align-items: center;
+        display: flex;
+        width: 70%;
+        justify-content: space-around;
+        span{
+            line-height: 30px;
+          }
+    }
+}
+.contain-center{
+    @include display;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 250vh;  
+}
+.box{
+    @include display;
+    justify-content: center;
+    margin: 20px;
+    div{
+        padding: 6px;
+       border:  solid blue;
+       font-size: small;
+       width: 30px;
+       @include display;
+       justify-content: center;
+    }
+    .num{
+        padding: 10px;
+    }
+    
+}
+container .box div:hover{
+    background-color: blue;
+    cursor: pointer;
+    color: white;
+
+}
+.form-container{
+    background-image: url(../../image/sign\ in.webp);
+    @include background-img;
+    display:flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.contact{
+    height: 25vh;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+   .span{
+    margin: 10px;
+
+   }
+   
+}
+.main-contact{
+    .link .fa,.fa, .text .title{
+        color: rgb(88, 88, 88);
+        font-size: larger;
+    }
+    .link {
+        margin-left: 90px;
+        margin-top: 20px;
+        .fa{
+            color: blue;
+        }
+    }
+}
+.location{
+    height: 100vh;
+    margin-left: 60px;
+    padding: 20px;
+    .span{
+        margin: 10px;
+    }
+}
+form .data{
+    width: 110vh;
+}
+@media( max-width:900px){
+    container{
+        main{
+            height: 45vh;
+        }
+        .contain-center{
+            height: 200vh;
+            .main-card{
+                width: 27%;
+            }
+        }
+        .main-head,.header,.head{
+            height: 50vh;
+        }
+        .contain{
+            height: 350vh;
+            .text{
+                width: 80%;
+            }
+        
+        }
+        .center{
+            height: 200vh;
+        }
+       
+    }
+  
+}
+
+@media( max-width:500px){
+   container{
+    .center{
+        height: 500vh;
+    
+    }
+    
+   .form-list{
+    display: none;
+   }
+    main{
+        height: 40vh;
+
+    }
+    .image{
+        display: none;
+    }
+   
+    .caiption{
+        margin: 0;
+        display: flex;
+        padding: 0;
+        justify-content: center;  
+    }
+    .contain{
+        height: 650vh;
+    }
+   }
+  
+  .link{
+    display: none;
+  }
+ 
+}

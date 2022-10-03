@@ -1,0 +1,175 @@
+@import'../maxin';
+.btn-search{
+    @include display;
+    margin-top: 50px;
+    background-color: $colortext;
+    justify-content: space-between;
+    padding: 15px;
+    width: 70%;
+    border-radius: 15px
+    
+    
+}
+.search{
+    @include display;
+    justify-content: center; 
+    
+}
+input{
+    padding: 10px;
+    width: 80%;
+    border: none;
+    font-size: $fontsize-p;
+}
+.form{
+    padding: 5px;
+    margin-left: 110px;
+    margin-bottom: 20px;
+    background-color: white;
+    @include display;
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+    width: 25%;
+    border-radius: 10px;
+}
+select{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 60%;
+    margin: 5px;
+    font-size: large;
+    display: flex;
+    
+}
+.form-list {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    select{
+    width: 15%;
+    }
+}
+.form-data{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    align-items: center;
+    width: 35%;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.527);
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.username {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    label{
+        font-weight: bold;
+    }
+    
+    
+}
+.username input{
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    margin-top: 10px;
+    width: 90%;
+    font-size: 16px;
+    
+}
+.submit{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    span a{
+        color: blue;
+    }
+}
+.form-group{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    font-weight: bold;
+    
+    
+}
+.form-text input{
+    width: 80%;
+    padding: 10px;
+    border: 1px solid rgb(148, 146, 146);
+    border-radius: 5px;
+
+}
+.form-email{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    font-weight: bold;
+
+}
+.form-email input{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid rgb(148, 146, 146);
+    border-radius: 5px;
+}
+.form-radio{
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+
+    .text-label{
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+   .radio{
+    display: flex;
+
+   }
+  
+}
+
+@media( max-width:900px){
+    .btn-search{
+        width: 80%;
+        padding: 10px;
+        margin: 0px;
+    }
+    .form{
+        width: 40%;
+        margin-left: 0px;
+    }
+
+ }
+ @media( max-width:500px){
+    .form{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 5px;
+        select{
+            width: 100%;
+            margin-left: 0;
+            padding: 5px;
+          
+        }
+    }
+    .form-list {
+       overflow: scroll;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        select{
+            width: 70%;
+        }
+    }
+
+ }

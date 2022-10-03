@@ -1,0 +1,44 @@
+
+@mixin display {
+    display: flex;
+    align-items: center;
+}
+@mixin btn {
+    padding: 15px;
+    color: $colortext;
+    background: $background;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+}
+@mixin input {
+    padding: 5px;
+}
+@mixin background-img {
+    background-position: center;
+    background-size: cover;
+}
+@mixin main-title{
+    text-transform: uppercase;
+    font-size: $fontsize-title;
+    color: $colortext;
+    width: 100%;
+}
+@mixin text{
+    color: $colortext;
+    font-size: $fontsize-p;
+    width: 40%;
+
+}
+@mixin sub-title {
+    color: $colortext;
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+    
+}
+@mixin title {
+    color: $colortext;
+    font-size: 25px;
+    color: black;
+}

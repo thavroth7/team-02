@@ -1,0 +1,155 @@
+// @import'../maxin';
+nav{
+    height: 4rem;
+    position: sticky;
+    top: 0;
+    background: #ffff;
+    /* background: rgb(70, 186, 182); */
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 10px 10px;
+    justify-content: space-between;
+   
+    
+   
+}
+nav  .logo img{
+    width: 200px;
+    height: 20px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin-right: 50px;
+    ul li:nth-child(2){
+        border-left: 2px solid;
+    }
+}
+nav ul li {
+    margin: 0 9px;
+  
+    
+}
+
+
+nav ul li::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    margin: auto;
+    display: block;
+    transition: .5s;
+}
+nav ul :hover::after{
+    width: 100%;
+    background-color: blue;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    padding: 8px 10px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+  
+}
+#click{
+    display: none;
+}
+.fa-bars{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width:900px){
+    nav{
+        padding: 1rem 1.4rem;
+    }
+    .logo img{
+        width: 150px;
+        height: 50px;
+    }
+    nav ul{
+        position: fixed;
+        left: -100%; 
+        top: 64px;
+        width: 100%;
+        display: block;
+        height: auto;
+        background: #010155e3;
+        text-align: left;
+        transition: all 1s ease;
+        padding: 0;
+    }
+    nav ul li{
+        margin: 0.8rem 2rem;
+    }
+    nav ul li:hover{
+        transform: none;
+    }
+    nav ul li:hover::after{
+        width: 0;
+    }
+    nav ul li a{
+        display: block;
+        padding: 8px 0px;
+        color: #ffff;
+    }
+    .fa-bars{
+        display: block;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    #click:checked ~ .menu-bars i::before{
+        content: "\f00d";
+    }
+}
+@media( max-width:500px){
+    nav{
+        padding: 1rem 1.4rem;
+    }
+    .logo img{
+        width: 4rem;
+        height: 4rem
+    }
+    nav ul{
+        position: fixed;
+        left: -100%; 
+        top: 64px;
+        width: 100%;
+        display: block;
+        height: auto;
+        background: #010155e3;
+        text-align: left;
+        transition: all 1s ease;
+        padding: 0;
+    }
+    nav ul li{
+        margin: 0.8rem 2rem;
+    }
+    nav ul li:hover{
+        transform: none;
+    }
+    nav ul li:hover::after{
+        width: 0;
+    }
+    nav ul li a{
+        display: block;
+        padding: 8px 0px;
+        color: #ffff;
+    }
+    .fa-bars{
+        display: block;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    #click:checked ~ .menu-bars i::before{
+        content: "\f00d";
+    }
+}

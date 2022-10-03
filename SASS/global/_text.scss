@@ -1,0 +1,94 @@
+.main-title{
+    @include main-title;
+}
+p{
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+  width: 50%;
+
+}
+.sub-title{
+    @include sub-title;
+    
+}
+.title{
+  @include title;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  .title{
+    color: white;
+  }
+  .span{
+    display: flex;
+    flex-direction: column;
+  }
+}
+.group-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.card-text .sub-title{
+  margin-bottom: 10px
+}
+h1{
+  @include sub-title;
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.178);
+}
+h2{
+
+  font-size: 20px;
+}
+.num{
+  padding: 15px;
+}
+a{
+  text-decoration: none;
+}
+@media( max-width:900px){
+  p{
+    width: 70%;
+  }
+  .text{
+    width: 80%;
+  }
+  .card-text .title{
+    font-size: 20px;
+  }
+ 
+  
+}
+
+@media( max-width:500px){
+  p{
+    width: 100%;
+    font-size: smaller;
+  }
+  .main-title{
+    font-size: 30px;
+    width: 100%;
+
+  }
+  .text .title{
+     font-size: small;
+  }
+  .sub-title{
+    font-size: 15px;
+  }
+  span{
+    font-size: smaller;
+  }
+  h1{
+    font-size: 15px;
+    margin: 20px;
+  }
+
+}
